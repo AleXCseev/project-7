@@ -1,0 +1,258 @@
+.site__main {
+	width: 100%;
+	height: auto;
+}
+
+.first__section {
+	width: 100%;
+	height: auto;
+}
+
+.advantages__section {
+	width: 100%;
+	height: 570px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 3;
+	margin-bottom: 50px;
+}
+
+.advantages__section:before {
+	content: "";
+	position: absolute;
+	width: 1000px;
+	height: 1200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../img/advantage-branch.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.advantage__boot1 {
+	position: absolute;
+	width: 630px;
+	top: -50px;
+	right: 160px;
+	z-index: 5;
+}
+
+.advantage__boot2 {
+	position: absolute;
+	width: 600px;
+	bottom: -100px;
+	left: 170px;
+	z-index: 5;
+}
+
+.advantages__groupe {
+	width: 240px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.advantage {
+	margin-top: 35px;
+	width :240px;
+	height: 135px;
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 40px 20px 10px 20px;
+	position: relative;
+}
+
+.advantage__logo {
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #166908;
+	width :70px;
+	height: 70px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.advantage__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	word-wrap: wrap;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.slider__section {
+	width: 100%;
+	height: 900px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+
+// .slider__section:before {
+// 	content: "";
+// 	width: 1920px;
+// 	height: 740px;
+// }
+
+.slider__section-wrapper {
+	width: 680px;
+	height: 580px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.slider {
+	width: 387px;
+	height: 580px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide {
+	width: 387px;
+	height: 580px;
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		background-image: url("../img/zoom.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		// z-index: 10000;
+		pointer-events: none;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s ease;
+	}
+}
+
+.slide:hover {
+	&:before {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.slick-prev {
+	left: auto;
+	top: auto;
+	transform: none;
+	right: 0;
+	bottom: 20px;
+	width: 100px;
+	height: 50px;
+	border-radius: 30px 0px 0px 30px;
+	background-color: #000;
+	z-index: 100000;
+	padding-left: 10px;
+	&:before {
+		font-size: 40px;
+		line-height: 50px;
+		color: #fff;
+	}
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: #fff;
+    outline: none;
+    background: #000;
+}
+
+.slick-next {
+	left: auto;
+	top: auto;
+	transform: none;
+	left: 0;
+	bottom: 20px;
+	width: 100px;
+	height: 50px;
+	border-radius: 0px 30px 30px 0px;
+	background-color: #000;
+	z-index: 100000;
+	padding-left: 10px;
+	&:before {
+		font-size: 40px;
+		line-height: 50px;
+		color: #fff;
+	}
+}
+
+
+.fotos {
+	height: 100%;
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.fotos__row {
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.row__2 {
+	align-items: center;
+}
+
+.row__3 {
+	align-items: flex-end;
+}
+
+.foto__wrapper {
+	width: 120px;
+	height: 180px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.3s ease;
+	
+	img {
+		width: 100%;
+		height: auto;
+		pointer-events: auto;
+	}
+}
+
+.foto__wrapper.active {
+	width: 106px;
+	height: 160px;
+	opacity: 0.8;
+} 
+
+.foto__wrapper:hover {
+	width: 106px;
+	height: 160px;
+	opacity: 0.8;
+} 
