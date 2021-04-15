@@ -1,0 +1,475 @@
+.second__section{
+	width: 100%;
+	height: auto;
+	background-image: 
+		url("../img/cardbg-right.png"),
+		url("../img/cardbg-left.png");
+	background-repeat: no-repeat;
+	background-position: 
+		right top 300px,
+		left top 1000px;
+	background-size: 
+		800px,
+		800px;
+	position: relative;
+} 
+
+.second__section:before {
+	content: "";
+	width: 1920px;
+	height: 900px;
+	position: absolute;
+	top: -400px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("../img/clouds.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+	opacity: 0.4;
+}
+
+.second__section:after {
+	content: "";
+	width: 1920px;
+	height: 900px;
+	position: absolute;
+	top: 500px;
+	right: 50%;
+	// transform: translateX(-50%);
+	background-image: url("../img/clouds.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+	opacity: 0.4;
+}
+
+.card__section {
+	width: 100%;
+	height: auto;
+}
+
+.card {
+	width: 100%;
+	height: 540px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin: 180px 0;
+}
+
+.card__left {
+	width: 360px;
+	height: 100%;
+	background: #206B4C;
+	box-shadow: 0px 4px 4px rgba(155, 36, 88, 0.25);
+	border-radius: 10px 0px 0px 10px;
+	padding: 50px 30px;
+	position: relative;
+	z-index: 10;
+}
+
+.card__sale {
+	width: 130px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	right: -130px;
+	transform: translateY(-50%);
+	background: #15543A;
+	border-radius: 0px 50px 50px 0px;
+	padding: 16px 20px 16px 11px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card__sale-text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.card__sale-num {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.card__galary {
+	width: 100%;
+	height: 133px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.galary__row {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.galary__foto {
+	width: 90px;
+	height: 60px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.galary__img {
+	width: 90px;
+	height: auto;
+	pointer-events: auto;
+}
+
+.card__table {
+	width: 100%;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 160%;
+	text-align: right;
+	color: #FFFFFF;
+	margin-bottom: 36px;
+	tr td:first-of-type {
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+.card__price {
+	.old__price {
+		color: #FFFFFF;
+	}
+	.old__price:before {
+		background-color: #FFE600;
+		opacity: 1;
+	}
+	.new__price {
+		color: #FFE600;
+	}
+}
+
+.card__center {
+	height: 540px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url("../img/advantage-branch.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+}
+
+.card__title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 100%;
+	text-align: center;
+	color: #000000;
+}
+
+.card__boot1 {
+	position: absolute;
+	top: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__boot2 {
+	position: absolute;
+	bottom: 40px;
+	// left: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__right {
+	width: 360px;
+	height: 100%;
+	background: #206B4C;
+	box-shadow: 0px 4px 4px rgba(155, 36, 88, 0.25);
+	border-radius: 0px 10px 10px 0px;
+	padding: 50px 30px;
+	position: relative;
+	z-index: 10;
+}
+
+.card__info {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.card__info-yellow {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFE600;
+	margin-bottom: 30px;
+	span {
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+
+.card__form {
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.input__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.card__size-btns {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.size__text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+	margin-bottom: 23px;
+}
+
+.card__size-wrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card__size-block {
+	position: relative;
+	width: 34px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+.card__size-button {
+	width: 34px;
+	height: 34px;
+	border: 1px solid #FFFFFF;
+	border-radius: 100%;
+	opacity: 0.4;
+	transition: 0.3s ease;
+	cursor: pointer;
+	outline: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 34px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.card__size {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%) rotate(90deg); 
+	width: 60px;
+	height: auto;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	opacity: 0;
+	transition: 0.3s ease;
+}
+
+.card__size-block.active {
+	.card__size-button {
+		opacity: 1;
+	}
+	.card__size {
+		opacity: 0.4;
+	}
+}
+
+.card__size-button:hover {
+	opacity: 1;
+}
+
+.card__form .header__order-btn {
+	margin: auto;
+	background: #FFE600;
+	box-shadow: none;
+	color: #000;
+}
+
+.card__form .header__order-btn:hover {
+	background-color: #C72626;
+	color: #fff;
+}
+
+.review__section {
+	width: 100%;
+	height: 531px;
+	position: relative;
+}
+
+.review__section:before {
+	content: "";
+	width: 1920px;
+	height: 900px;
+	position: absolute;
+	top: -250px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("../img/clouds.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+	opacity: 0.5;
+}
+
+.reviews {
+	width: 100%;
+	height: 100%;
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: flex-end;
+}
+
+.review {
+	width: 360px;
+	height: 371px;
+	background: #206B4C;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	position: relative;
+	opacity: 0.7;
+	margin: 0 15px;
+	margin-top: 110px;
+	transition: 0.3s ease;
+}
+
+.review__autor {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.review__foto {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.review__img {
+	width: 100px;
+	height: auto;
+	border-radius: 100%;
+}
+
+.autor__name {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.message__text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.review__section {
+	.slick-list {
+		padding: 0 !important;
+	}
+	.slick-track {
+		height: 531px;
+	}
+	.slick-center {
+		margin-top: 50px;
+		opacity: 1;
+	}
+	.slick-prev {
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		background: none;
+		border-radius: none;
+		bottom: 30px;
+		margin-left: -100px;
+	}
+	.slick-prev:before {
+		color: #000;
+	}
+	.slick-next {
+		right: 50%;
+		left: auto;
+		transform: translateX(50%);
+		background: none;
+		border-radius: none;
+		bottom: 30px;
+		margin-right: -100px;
+	}
+	.slick-next:before {
+		color: #000;
+	}
+}
