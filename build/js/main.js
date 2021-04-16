@@ -15,16 +15,35 @@ $(function () {
 		dots: false,
 		centerMode: true,
 		// adaptiveHeight: true
-		
+		responsive: [
+			{
+				breakpoint: 1080,
+				settings: {
+					centerMode: false,
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 740,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			}
+		]
 	})
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 1000) {
-			fixedOffset = 600;
+			fixedOffset = -200;
 		}
 		if ($(document).width() <= 660) {
-			fixedOffset = -100;
+			fixedOffset = -200;
 		}
 		$('html,body')
 			.stop()
