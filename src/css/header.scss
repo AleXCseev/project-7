@@ -159,7 +159,7 @@
 	line-height: 14px;
 	color: #000000;
 	bottom: 78px;
-	left: 92px;
+	left: 132px;
 }
 
 .sales {
@@ -170,7 +170,8 @@
 	line-height: 18px;
 	color: #FFFFFF;
 	bottom: 38px;
-	left: 105px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .big {

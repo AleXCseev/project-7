@@ -42,6 +42,7 @@
 	background-position: center top;
 	background-size: contain;
 	opacity: 0.4;
+	z-index: 1;
 }
 
 .card__section {
@@ -56,6 +57,7 @@
 	justify-content: space-between;
 	position: relative;
 	margin: 180px 0;
+	z-index: 1000;
 }
 
 .card__left {
@@ -66,7 +68,10 @@
 	border-radius: 10px 0px 0px 10px;
 	padding: 50px 30px;
 	position: relative;
-	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
 }
 
 .card__sale {
@@ -111,7 +116,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
 }
 
 .galary__row {
@@ -142,7 +147,7 @@
 	line-height: 160%;
 	text-align: right;
 	color: #FFFFFF;
-	margin-bottom: 36px;
+	// margin-bottom: 20px;
 	tr td:first-of-type {
 		font-weight: bold;
 		text-align: left;
@@ -176,7 +181,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	// z-index: 1;
+	z-index: -1;
 }
 
 .card__title {

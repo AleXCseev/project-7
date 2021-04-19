@@ -524,12 +524,11 @@
 	.only__wekkend {
 		font-size: 7px;
 		bottom: 45px;
-		left: 57px;
+		left: 84px;
 	}
 	.sales {
 		font-size: 8px;
 		bottom: 20px;
-		left: 68px;
 	}
 	.big {
 		font-size: 24px;
@@ -764,6 +763,7 @@
 		right: 0px;
 		margin-top: -20px;
 		transform: translateY(-50%);
+		animation: none;
 	}
 	.advantage__boot2 {
 		width: 350px;
@@ -771,6 +771,7 @@
 		left: 50px;
 		margin-bottom: -80px;
 		transform: translateY(50%);
+		animation: none;
 	}
 	.second__section{
 		background: none;
@@ -1206,9 +1207,13 @@
 	.sprey__img {
 		margin-top: -10px;
 	}
+
 	.sprey__title {
 		font-size: 24px;
 		line-height: 28px;
+	}
+	.card .price {
+		margin-bottom: 30px;
 	}
 	.card__center {
 		width: 100%;
@@ -1220,6 +1225,12 @@
 	}
 	.card__left {
 		margin-top: 420px;
+	}
+	.card__galary {
+		margin-bottom: 20px;
+	}
+	.card__table {
+		margin-bottom: 20px;
 	}
 	.card__sale {
 		top: 120px;
@@ -1359,7 +1370,7 @@
 	.footer-dev {
 		padding: 0;
 		width: 290px;
-		margin: auto;
+		// margin: 0 auto;
 	}
 }
 
@@ -1381,6 +1392,9 @@
 		width: 180px;
 		right: -50px;
 		bottom: 240px;
+	}
+	.header__subtitle {
+		margin-bottom: 270px;
 	}
 	.slider__left {
 		height: 400px;
