@@ -217,13 +217,13 @@
 
 .slider {
 	width: 387px;
-	height: 580px;
+	height: 578px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .slide {
 	width: 387px;
-	height: 580px;
+	height: 578px;
 	position: relative;
 	// pointer-events: auto;
 	a {
@@ -316,7 +316,7 @@
 
 .fotos__row {
 	width: 100%;
-	height: 180px;
+	height: 178px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -332,7 +332,7 @@
 
 .foto__wrapper {
 	width: 120px;
-	height: 180px;
+	height: 178px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	transition: 0.3s ease;
 	cursor: pointer;
@@ -346,7 +346,7 @@
 
 .foto__wrapper.active {
 	width: 106px;
-	height: 160px;
+	height: 158px;
 	opacity: 0.8;
 } 
 

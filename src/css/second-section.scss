@@ -289,9 +289,13 @@
 	width: 34px;
 	height: 100px;
 	margin-right: 10px;
+	display: inline-block;
 }
 
 .card__size-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 34px;
 	height: 34px;
 	border: 1px solid #FFFFFF;
@@ -311,7 +315,7 @@
 
 .card__size {
 	position: absolute;
-	top: 60px;
+	top: 62px;
 	left: 50%;
 	transform: translateX(-50%) rotate(90deg); 
 	width: 60px;
